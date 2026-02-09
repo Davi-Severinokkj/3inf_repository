@@ -4,56 +4,150 @@
 
 body {
     margin: 0;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #111;
 }
-
 
 .header_container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: #212623;
     padding: 15px 30px;
 }
 
-.col-25 {
-    width: 25%;
-}
-
-.col-75 {
-    width: 75%;
-}
-
-
 .logo h1 {
-    color: #00e676;
     margin: 0;
-    font-size: 24px;
+    color: #00e676;
 }
 
-
-.header_navigation nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header_navigation ul {
+nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 20px;
     margin: 0;
     padding: 0;
 }
 
-.header_navigation a {
-    color: white;
+nav a {
     text-decoration: none;
-    font-size: 15px;
+    color: white;
     font-weight: 500;
 }
 
-.header_navigation a:hover {
+nav a:hover {
     color: #00e676;
 }
 
+.latest-news {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.latest-news h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.news-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    width: calc(33.33% - 14px);
+    background: #f6f6f6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-card img {
+    width: 100%;
+}
+
+.news-card h3 {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.news-card p {
+    margin: 0 15px 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.folder {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+}
+
+.folder-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.folder-text {
+    width: 50%;
+}
+
+.folder-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #00a562;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.folder-text h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.folder-text p {
+    font-size: 16px;
+    color: #444;
+}
+
+.folder-text a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00a562;
+}
+
+.folder-image {
+    width: 50%;
+}
+
+.folder-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .news-card {
+        width: calc(50% - 10px);
+    }
+
+    .folder-content {
+        flex-direction: column;
+    }
+
+    .folder-text,
+    .folder-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .news-card {
+        width: 100%;
+    }
+}
