@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 * {
     box-sizing: border-box;
 }
@@ -150,4 +153,21 @@ nav a:hover {
     .news-card {
         width: 100%;
     }
+}
+.logo h1:hover{
+    color: rgb(20, 201, 141);
+    text-decoration: none;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212623;
+    padding: 15px 30px;
+}
+.footer_container h3{
+    color: white;
+}
+.col-50{
+    width: 50%;
 }
