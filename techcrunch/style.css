@@ -58,12 +58,16 @@ nav a:hover {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .news-card {
     width: calc(33.33% - 14px);
     background: #f6f6f6;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.news-card:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 
 .news-card img {
