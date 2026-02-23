@@ -1,0 +1,18 @@
+/*a.btn.btn-primary:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    background-color: rgb(68, 13, 13);
+}
+    */
+body{
+    padding: 2rem;
+}
+button.btn.btn-primary {
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+button.btn.right {
+    transform: rotate(0deg);
+}
+
