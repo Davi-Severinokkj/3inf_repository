@@ -1,18 +1,25 @@
-/*a.btn.btn-primary:hover{
-    transition: 0.3s;
-    transform: scale(1.1);
-    background-color: rgb(68, 13, 13);
+.website{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f8f9fa;
 }
-    */
 body{
-    padding: 2rem;
-}
-button.btn.btn-primary {
-    transform: rotate(45deg);
-    transition: 0.3s;
+    background-color: #f8f9fa;
+    padding: 0px;
+    margin: 0px;
 }
 
-button.btn.right {
-    transform: rotate(0deg);
+.header-container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
+@media (min-width: 50em) {
+    .header-container {
+        height: 5.3125rem;
+    }
+}
+.col-50{
+    width: 50%;
+}
