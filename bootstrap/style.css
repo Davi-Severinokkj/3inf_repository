@@ -12,8 +12,17 @@ body{
 .header-container{
     max-width: 1200px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    
+}
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 130px;
+    gap: 10px;
 }
 @media (min-width: 50em) {
     .header-container {
@@ -22,4 +31,29 @@ body{
 }
 .col-50{
     width: 50%;
+}
+.fa-brands{
+    text-decoration: none;
+    color: black;
+}
+.fa-brands:hover{
+    color: wheat;
+}
+#logo:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.648);
+    border-radius: 3px;
+}
+.container-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.card:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
 }
