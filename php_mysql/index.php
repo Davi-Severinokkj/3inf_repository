@@ -1,11 +1,8 @@
 <?php
+$nome = "Davi";
+$idade = 17;
+$altura = 1.83;
 
-    $ano = 2026;
+echo "Nome: ", $nome , "<br>", "Idade: ", $idade , "<br>" , "Altura: ", $altura ;
 
-    echo "Olá mundo! <br>"; 
-
-    $mensagem = "Olá!"
-    if (print $mensagem) {       
-        echo " - Mensagem exibida com sucesso!";
-    }
 ?>
