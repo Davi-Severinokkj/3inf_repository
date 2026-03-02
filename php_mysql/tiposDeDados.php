@@ -4,7 +4,9 @@
 define("IDADE", 17);
 $diferenca = 18 - IDADE;
 
-if(IDADE < 18){
+if(IDADE === 17){
+    echo "Você tem " . IDADE . " anos" . ", portanto é menor de idade e tem que esperar " , $diferenca , " ano para tirar sua carteira de habilitaçao." . PHP_EOL;
+} else if(IDADE < 18){
     echo "Você tem " . IDADE . " anos" . ", portanto é menor de idade e tem que esperar " , $diferenca , " anos para tirar sua carteira de habilitaçao." . PHP_EOL;
 } else if (IDADE >= 18){
     echo "Você tem " . IDADE . " anos" . ", portanto é maior de idade e pode tirar sua carteira de habilitação!" . PHP_EOL; ;
