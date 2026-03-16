@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ea7389-b901-4a16-86ad-67a349caf5c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/techcrunch/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/techcrunch/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techcrunch/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/techcrunch/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/condicionais_loops.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_mysql/tiposDeDados.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_mysql/tiposDeDados.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="PHP File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -24,6 +32,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="39QiWUZf3HbbLw6gPfjTGlEqkbs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +42,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;PHP Script.condicionais_loops.php.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -61,6 +73,8 @@
       <updated>1770634727320</updated>
       <workItem from="1770634728731" duration="841000" />
       <workItem from="1770719275891" duration="14000" />
+      <workItem from="1773657428078" duration="1429000" />
+      <workItem from="1773663555511" duration="4671000" />
     </task>
     <servers />
   </component>

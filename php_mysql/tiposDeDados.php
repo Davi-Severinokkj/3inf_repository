@@ -1,34 +1,41 @@
 <?php
 
+$estudante = true;
 
-define("IDADE", 17);
-$diferenca = 18 - IDADE;
+if ($estudante) {}
 
-if(IDADE === 17){
-    echo "Você tem " . IDADE . " anos" . ", portanto é menor de idade e tem que esperar " , $diferenca , " ano para tirar sua carteira de habilitaçao." . PHP_EOL;
-} else if(IDADE < 18){
-    echo "Você tem " . IDADE . " anos" . ", portanto é menor de idade e tem que esperar " , $diferenca , " anos para tirar sua carteira de habilitaçao." . PHP_EOL;
-} else if (IDADE >= 18){
-    echo "Você tem " . IDADE . " anos" . ", portanto é maior de idade e pode tirar sua carteira de habilitação!" . PHP_EOL; ;
-}
+$nome = "Davi Severino Oliveira de Souza";
+$idade = 17;
+$altura = 1.83;
 
-echo "-----------------------";
-echo "Contagem progressiva de 0 a 100";
-echo "-----------------------" . PHP_EOL;
+$cores = ['azul', 'verde', 'amarelo', 'vermelho'];
 
-for($i = 0; $i < 100; $i = $i + 3){
+echo "Nome: " . $nome . "<br>";
+echo "Idade: " . $idade . "<br>";
+echo "Altura: " . $altura . "<br>";
+echo "Cores favoritas: " . $cores[0] . ", " . $cores[1] . ", " . $cores[2] . ", " . $cores[3] . "<br>";
 
-    echo "Número: " , $i . PHP_EOL;
-}
 
-echo "-----------------------";
-echo "Contagem regressiva de 100 a 0";
-echo "-----------------------" . PHP_EOL;
-
-for($number = 100; $number > 0; $number = $number - 3){
-    echo "Número: " , $number . PHP_EOL;
-}
-
+//foreach ($cores as $cor) {
+//    echo "Minhas cores favoritas são: " . $cor . "<br>";
+//}
 
 ?>
+
+<style>
+    body:hover{
+        background-color: #470315;
+        color: brown;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        background-color: #48d57a;
+        font-family: cursive;
+        font-size: 20pt;
+        text-align: center;
+    }
+</style>
 
