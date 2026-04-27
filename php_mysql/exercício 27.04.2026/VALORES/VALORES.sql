@@ -1,0 +1,21 @@
+insert into Endereco() values('03150-000', 'Rua A', '100', NULL, 'Santana', 'São Paulo', 'SP'),
+('21000-100', 'Av. B', '200', 'casa A', 'Realejo', 'Rio de Janeiro', 'RJ'),
+('31500-000', 'Rua C', '300', null, null, 'Belo Horizonte', 'MG'),
+('41234-001', 'Rua D' , 's/n', 'sitio Alegre', 'Zona Rural', 'Curitiba', 'PR'),
+('51000-000', 'Av. E' , '500', 'Fundos', 'Centro', 'Porto Alegre', 'RS'),
+('04201-001', 'Rua das Flores', '123', null, 'Centro', 'São Paulo', 'SP'),
+('21002-500', 'Avenida Atlântica', '890', 'Loja 3', 'Copacabana', 'Rio de Janeiro', 'RJ'),
+('01995-654', 'Rua das Palmeiras', '210', null, 'Jardim Paulista', 'Campinas', 'SP'),
+('21400-000', 'Avenida Beira Mar', '90', 'Loja 1', 'Viradouro', 'Rio de Janeiro', 'RJ'),
+('01995-654', 'Rua das Palmares', '210', 'Sobreloja', 'Jardim Canadá', 'Campina Grande', 'SP');
+
+insert into Clientes(nome, cpf, telefone, email, enderecoID) values('João Silva', '12345678901', '11987654321', 'joao.silva@email.com', 1),
+('Maria Souza', '23456789012', '11965432109', 'maria.souza@email.com', 2),
+('Carlos Pereira', '34567890123', '21988887777', 'carlos.pereira@email.com', 3),
+('Ana Oliveira', '45678901234', '31977776666', 'ana.oliveira@email.com', 4),
+('Fernanda Lima', '56789012345', '41999998888', 'fernanda.lima@email.com', 5),
+('Carla Mendes', '22233344455', '(11) 98876-5432', 'carla.mendes@email.com', 6),
+('Lucas Pereira', '33344455566', '(21) 97654-3210', 'lucas.pereira@email.com', 7),
+('Fernanda Oliveira', '44455566677', '(41) 98765-9876', 'fernanda.oliveira@email.com', 8),
+('Roberto Silva', '55566677788', '(31) 98989-1234', 'roberto.silva@email.com', 9),
+('Ana Costa', '66677788899', '(19) 98444-2233', 'ana.costa@email.com', 10);
