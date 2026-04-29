@@ -1,5 +1,4 @@
 <?php
-
 try{
     $con = new mysqli("localhost", "root", "", "escola");
     $con->set_charset("utf8mb4");
