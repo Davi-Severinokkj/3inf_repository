@@ -1,6 +1,5 @@
 <?php
 $nameUser = $_REQUEST["nome"];
-$register = $_REQUEST["regAluno"];
 $email = $_REQUEST["email"];
 $telefone = $_REQUEST["telefone"];
 
@@ -10,10 +9,12 @@ try {
     $con = new mysqli("localhost", "root", "", "aulaphp");
     $con->set_charset("utf8mb4");
 
-    $sql1 = "INSERT INTO cadastro_alunos(regAluno, nome, email, telefone) VALUES ('$register', '$nameUser', '$email', '$telefone')";
+    $sql1 = "INSERT INTO cadastro_alunos(nome, email, telefone) VALUES ('$nameUser', '$email', '$telefone')";
     $con->query($sql1);
 } catch (mysqli_sql_exception $e) {
     echo "Erro ao inserir no banco de dados." . $e -> getMessage();
+} finally{
+    $con->close();
 }
 
 ?>
@@ -55,8 +56,6 @@ try {
     <div class="mensage">
         <h3>
             Parabéns <strong><?php echo $nameUser?>!</strong> Você foi cadastrado com sucesso! <br>
-            Seu ID Aluno é <?php echo $register?>. <br>
-            Seu nome é <?php echo $nameUser?>. <br>
             Seu e-mail <?php echo $email?>. <br>
             Seu telefone <?php echo $telefone?>. <br>
         </h3>

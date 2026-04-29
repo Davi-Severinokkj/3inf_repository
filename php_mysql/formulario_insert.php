@@ -52,14 +52,14 @@
     </style>
 </head>
 <body>
+    <div>
+        <a href="formulario_cadastro.php">Consultar Cadastro</a>
+    </div>
+    <div>
+        <a href="formulario_cadastro.php">Cadastrar</a>
+    </div>
     <div class="form_interface">
         <form action="formulario_exit.php" method="POST">
-
-            <label>Registro do Aluno</label>
-            <input type="number" name="regAluno" required autocomplete="off">
-
-            <br>
-
             <label>Nome:</label>
             <input type="text" name="nome" required autocomplete="off">
 
@@ -80,8 +80,5 @@
         </form>
 
     </div>
-
-
-
 </body>
 </html>
