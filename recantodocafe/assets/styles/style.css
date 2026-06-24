@@ -1,8 +1,17 @@
 /* RESET */
+html,
+body{
+    height:100%;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -469,7 +478,7 @@ footer p {
 
 .sobre {
 
-    background-image: url(img/fundo\ café.jpg);
+    background-color: #412c16;
 
     background-size: cover;
 
@@ -524,15 +533,15 @@ body {
 
 .pagina-servicos {
 
-    background: #420617;
+    flex:1;
 
-    display: flex;
+    background:#412c16;
 
-    justify-content: center;
+    display:flex;
+    justify-content:center;
+    gap:100px;
 
-    gap: 100px;
-
-    padding: 90px;
+    padding:90px;
 
 }
 
@@ -580,7 +589,7 @@ body {
 
 .clientes {
 
-    background-image: url("img/fundo\ café.jpg");
+    background-color: #412c16;
 
     background-size: cover;
 
