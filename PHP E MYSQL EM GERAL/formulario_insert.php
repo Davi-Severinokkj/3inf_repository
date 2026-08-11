@@ -12,9 +12,6 @@
             color: white;
             font-family: "Arial Black";
             background: #2b8cb3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             height: 100vh;
         }
         input{
@@ -36,7 +33,7 @@
 
         .form_interface{
             display: flex;
-            flex-wrap: wrap;
+            margin: auto;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -49,16 +46,24 @@
             background-color: #F8F9FA;
             font-size: 20pt;
         }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #1e3a8a;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <a href="formulario_cadastro.php">Consultar Cadastro</a>
-    </div>
-    <div>
-        <a href="formulario_cadastro.php">Cadastrar</a>
-    </div>
+
     <div class="form_interface">
+        <div>
+            <a href="formulario_cadastro.php">Consultar Cadastro</a>
+        </div>
+        <div>
+            <a href="formulario_cadastro.php">Cadastrar</a>
+        </div>
         <form action="formulario_exit.php" method="POST">
             <label>Nome:</label>
             <input type="text" name="nome" required autocomplete="off">
