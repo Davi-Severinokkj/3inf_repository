@@ -1,6 +1,48 @@
 <?php
 
+$nome = $senha = $email = $telefone = "";
+$nome_err = $senha_err = $email_err = $telefone_err = "";
+
+
 include("includes/head.php");
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (empty($nome)) {
+        $nome_err = "Por favor, insira o seu nome!";
+    } else {
+        $nome = verificar_entrada($_POST["nome"]);
+    }
+
+    if (empty($senha)) {
+        $senha_err = "Por favor, insira a senha!";
+    } else {
+        $senha = verificar_entrada($_POST["password"]);
+    }
+
+    if (empty($email)) {
+        $email_err = "Por favor, insira o email!";
+    } else {
+        $email = verificar_entrada($_POST["email"]);
+    }
+
+    if (empty($telefone)) {
+        $telefone_err = "Por favor, insira o telefone!";
+    } else {
+        $telefone = verificar_entrada($_POST["telefone"]);
+    }
+}
+
+function verificar_entrada($entrada)
+{
+    $entrada = trim($entrada);
+    $entrada = stripslashes($entrada);
+    $entrada = htmlspecialchars($entrada);
+    $entrada = strtolower($entrada);
+
+    return $entrada;
+}
 
 ?>
 
@@ -32,51 +74,6 @@ include("includes/head.php");
     </div>
 
 </header>
-
-<?php
-
-$nome = $senha = $email = $telefone = "";
-
-$nome_err = $senha_err = $email_err = $telefone_err = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    if (empty($_POST["nome"])) {
-        $nome_err = "Por favor, insira o seu nome!";
-    } else {
-        $nome = verificar_entrada($_POST["nome"]);
-    }
-
-    if (empty($_POST["password"])) {
-        $senha_err = "Por favor, insira a senha!";
-    } else {
-        $senha = verificar_entrada($_POST["password"]);
-    }
-
-    if (empty($_POST["email"])) {
-        $email_err = "Por favor, insira o email!";
-    } else {
-        $email = verificar_entrada($_POST["email"]);
-    }
-
-    if (empty($_POST["telefone"])) {
-        $telefone_err = "Por favor, insira o telefone!";
-    } else {
-        $telefone = verificar_entrada($_POST["telefone"]);
-    }
-}
-
-function verificar_entrada($entrada)
-{
-    $entrada = trim($entrada);
-    $entrada = stripslashes($entrada);
-    $entrada = htmlspecialchars($entrada);
-    $entrada = strtolower($entrada);
-
-    return $entrada;
-}
-
-?>
 
 <main>
 

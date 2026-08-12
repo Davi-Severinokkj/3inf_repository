@@ -1,4 +1,29 @@
-<?php include ("includes/head.php");?>
+<?php
+
+$nome = $_REQUEST["nome"];
+$senha = $_REQUEST['password'];
+$email = $_REQUEST['email'];
+$telefone = $_REQUEST['telefone'];
+
+try {
+    $connect = new mysqli("localhost", "root", "Seemg@1222017", "recanto_do_cafe");
+    $connect->set_charset("utf8");
+
+    $sql1 = "INSERT INTO usuario(nome , senha , email, telefone) values('$nome' , '$senha', '$email', '$telefone')";
+    $connect->query($sql1);
+
+} catch (mysqli_sql_exception $e) {
+    echo "<p style='color: white; font-weight: bolder;'>Erro ao inserir no banco de dados: " . $e->getMessage() . "</p>\n";
+} finally {
+    $connect->close();
+}
+
+include("includes/head.php");
+
+
+?>
+
+</head>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,12 +45,10 @@
             <li><a href="clientes.html">Clientes</a></li>
         </ul>
     </nav>
-
-    <a href="my_account.php">
-        <span style="color: white;">Olá,
+    <span style="color: white;">Olá,
             <span><?php echo $_REQUEST['nome']; ?></span>
         </span>
-    </a>
+
 
 </header>
 <section class="hero">
