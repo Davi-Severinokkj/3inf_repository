@@ -81,7 +81,7 @@ function verificar_entrada($entrada)
 
         <form action="form_register_output.php" method="post">
 
-            Nome:<br>
+            Nome completo:<br>
             <input type="text" name="nome">
             <span>* <?= $nome_err ?></span>
             <br>

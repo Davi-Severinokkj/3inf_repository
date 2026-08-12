@@ -81,6 +81,10 @@ nav a {
 nav a:hover {
     color: #d9a15d;
 }
+header a:hover{
+    transition: 0.3s;
+    color: #8ef679;
+}
 
 .form button{
     padding: 10px;

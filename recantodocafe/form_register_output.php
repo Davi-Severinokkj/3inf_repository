@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+
+$_SESSION['usuario_id'] = $id;
+
 $nome = $_REQUEST["nome"];
 $senha = $_REQUEST['password'];
 $email = $_REQUEST['email'];
@@ -18,8 +22,8 @@ try {
     $connect->close();
 }
 
-include("includes/head.php");
 
+include("includes/head.php");
 
 ?>
 
@@ -46,7 +50,7 @@ include("includes/head.php");
         </ul>
     </nav>
     <span style="color: white;">Olá,
-            <span><?php echo $_REQUEST['nome']; ?></span>
+            <a href="my_account.php"><span><?php echo $_REQUEST['nome']; ?></span></a>
         </span>
 
 
