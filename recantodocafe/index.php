@@ -4,43 +4,51 @@
 
 <?php
 
-include ("includes/head.php");
+include("includes/head.php");
 ?>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.php">
-                <img src="img/logo.png" alt="Recanto do Café">
-            </a>
-        </div>
+<header>
+    <div class="logo">
+        <a href="index.php">
+            <img src="img/logo.png" alt="Recanto do Café">
+        </a>
+    </div>
 
-        <nav>
-            <ul>
-                <li><a href="suporte.html">Suporte</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="clientes.html">Clientes</a></li>
-            </ul>
-        </nav>
 
-        <div class="form">
-            <button>
-                <a href="form_login.php">Login</a>
-            </button>
-            <button>
-                <a href="form_register.php">Registre-se</a>
-            </button>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="suporte.html">Suporte</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+        </ul>
+    </nav>
 
-    </header>
-    <section class="hero">
+
+    <div class="form">
+        <button>
+            <a href="form_login.php">Login</a>
+        </button>
+        <button>
+            <a href="form_register.php">Registre-se</a>
+        </button>
+    </div>
+
+    <div class="modal">
+        <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+</header>
+<section class="hero">
 
     <div class="hero-conteudo">
 
-        <span class="tag">
-            ☕ Cafés especiais • Brunch • Almoço
-        </span>
+            <span class="tag">
+                ☕ Cafés especiais • Brunch • Almoço
+            </span>
 
         <h1>
             O sabor que transforma<br>
@@ -55,15 +63,15 @@ include ("includes/head.php");
         <div class="hero-botoes">
 
             <a href="https://livemenu.app/menu/62d8294bf7f44a0021f7a379"
-                target="_blank"
-                class="btn-principal">
+               target="_blank"
+               class="btn-principal">
 
                 Ver Cardápio
 
             </a>
 
             <a href="#servicos"
-                class="btn-secundario">
+               class="btn-secundario">
 
                 Conheça nossos serviços
 
@@ -102,165 +110,131 @@ include ("includes/head.php");
     </div>
 
 </section>
-    <section id="servicos" class="servicos">
+<section id="servicos" class="servicos">
 
-        <div class="card">
-            <div class="texto">
-                <h2>DELICIOSOS DOCES & SALGADOS</h2>
-
-                <p>
-                    Descubra sabores preparados com carinho para deixar
-                    seu momento ainda mais especial.
-                </p>
-            </div>
-
-            <img src="img/doce.jpg">
-        </div>
-
-
-        <div class="card invertido">
-
-            <img src="img/cesta.png">
-
-            <div class="texto">
-                <h2>BOXES - CESTAS DE CAFÉ DA MANHÃ</h2>
-
-                <p>
-                    Monte experiências únicas com cafés,
-                    doces e presentes.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="texto">
-                <h2>BRUNCH</h2>
-
-                <p>
-                    Uma experiência deliciosa para qualquer horário.
-                </p>
-            </div>
-
-            <img src="img/brunch.png">
-
-        </div>
-
-
-        <div class="card invertido">
-
-            <img src="img/almoço.png">
-
-            <div class="texto">
-
-                <h2>ALMOÇO</h2>
-
-                <p>
-                    Refeições especiais para deixar seu dia melhor.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="texto">
-
-                <h2>CAFETERIA</h2>
-
-                <p>
-                    Cafés especiais preparados na hora.
-                </p>
-
-            </div>
-
-            <img src="img/café.png">
-
-        </div>
-
-    </section>
-    <section class="cardapio">
-
-
-        <div class="conteudo-cardapio">
-
-            <h1>DELICIAS DO NOSSO CARDÁPIO</h1>
-
-            <div class="onda"></div>
+    <div class="card">
+        <div class="texto">
+            <h2>DELICIOSOS DOCES & SALGADOS</h2>
 
             <p>
-                Com um cardápio preparado para todos os momentos do dia,
-                o Recanto do Café oferece um ambiente acolhedor e sabores
-                especiais para cafés, doces, salgados e refeições.
+                Descubra sabores preparados com carinho para deixar
+                seu momento ainda mais especial.
+            </p>
+        </div>
+
+        <img src="img/doce.jpg">
+    </div>
+
+
+    <div class="card invertido">
+
+        <img src="img/cesta.png">
+
+        <div class="texto">
+            <h2>BOXES - CESTAS DE CAFÉ DA MANHÃ</h2>
+
+            <p>
+                Monte experiências únicas com cafés,
+                doces e presentes.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <div class="texto">
+            <h2>BRUNCH</h2>
+
+            <p>
+                Uma experiência deliciosa para qualquer horário.
+            </p>
+        </div>
+
+        <img src="img/brunch.png">
+
+    </div>
+
+
+    <div class="card invertido">
+
+        <img src="img/almoço.png">
+
+        <div class="texto">
+
+            <h2>ALMOÇO</h2>
+
+            <p>
+                Refeições especiais para deixar seu dia melhor.
             </p>
 
-            <div class="galeria">
+        </div>
 
-                <img src="img/card1.jpg">
+    </div>
 
-                <img src="img/card2.png">
 
-                <img src="img/card3.png">
+    <div class="card">
 
-                <img src="img/card4.png">
+        <div class="texto">
 
-            </div>
+            <h2>CAFETERIA</h2>
 
-            <a href="https://livemenu.app/menu/62d8294bf7f44a0021f7a379" class="btn-cardapio" target="_blank">
-                VER CARDÁPIO COMPLETO
-            </a>
+            <p>
+                Cafés especiais preparados na hora.
+            </p>
 
         </div>
 
-    </section>
+        <img src="img/café.png">
 
-    <footer>
+    </div>
 
-        <div class="footer-conteudo">
+</section>
+<section class="cardapio">
 
-            <div class="footer-info">
 
-                <h3>Recanto do Café</h3>
+    <div class="conteudo-cardapio">
 
-                <p>
-                    Café, sabor e momentos especiais para o seu dia.
-                </p>
+        <h1>DELICIAS DO NOSSO CARDÁPIO</h1>
 
-                <span>
-                    &copy; 2026 Recanto do Café • Todos os direitos reservados.
-                </span>
+        <div class="onda"></div>
 
-            </div>
+        <p>
+            Com um cardápio preparado para todos os momentos do dia,
+            o Recanto do Café oferece um ambiente acolhedor e sabores
+            especiais para cafés, doces, salgados e refeições.
+        </p>
 
-            <div class="footer-redes">
+        <div class="galeria">
 
-                <h4>Nos acompanhe</h4>
+            <img src="img/card1.jpg">
 
-                <div class="redes">
+            <img src="img/card2.png">
 
-                    <a href="#" aria-label="WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
+            <img src="img/card3.png">
 
-                    <a href="#" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                </div>
-
-            </div>
+            <img src="img/card4.png">
 
         </div>
 
-    </footer>
+        <a href="https://livemenu.app/menu/62d8294bf7f44a0021f7a379" class="btn-cardapio" target="_blank">
+            VER CARDÁPIO COMPLETO
+        </a>
+
+    </div>
+
+</section>
+
+<?php
+
+include('includes/footer.php');
+
+?>
+
+
+<script src="../assets/scripts/script.js"></script>
+
 </body>
 
 </html>

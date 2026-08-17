@@ -7,3 +7,4 @@ if ($connect->connect_error) {
     echo "<p>Erro: . $connect->connect_error</p>";
     return;
 }
+?>
