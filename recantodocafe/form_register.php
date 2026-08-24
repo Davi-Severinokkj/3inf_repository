@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // CORREÇÃO: Primeiro pegamos o valor do $_POST para depois testar no preg_match
         $senha = verificar_entrada($_POST["password"]);
-        if(!preg_match("/^[a-zA-Z0-9]*$/",$senha)){
+        if(!preg_match("/^[a-zA-Z0-9_@!#$%¨&()]*$/",$senha)){
             $senha_err = "Padrão de senha incorreto. <span style='color: red;'>Utilize Senha12345 (Apenas letras e números)</span>";
         }
     }
