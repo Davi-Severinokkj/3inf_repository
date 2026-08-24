@@ -372,6 +372,14 @@ include("includes/head.php");
             Minha conta
         </h1>
 
+        <p>
+            <strong>
+                ID:
+            </strong>
+
+            <?= htmlspecialchars($usuario['id']) ?>
+        </p>
+
 
         <p>
 

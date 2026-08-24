@@ -96,7 +96,7 @@ function verificar_entrada($entrada)
     <div class="form_content">
 
         <!-- CORREÇÃO: Adicionado o "echo" antes do htmlspecialchars -->
-        <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+        <form action="form_register_output.php" method="post">
 
             Nome completo:<br>
             <input type="text" name="nome" value="<?= htmlspecialchars($nome) ?>">
