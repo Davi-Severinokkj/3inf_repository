@@ -185,7 +185,7 @@ include ("includes/header.php");
 
         </div>
 
-        <a href="https://livemenu.app/menu/62d8294bf7f44a0021f7a379" class="btn-cardapio" target="_blank">
+        <a href="produtos.php" class="btn-cardapio" target="_blank">
             VER CARDÁPIO COMPLETO
         </a>
 

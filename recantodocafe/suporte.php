@@ -96,20 +96,7 @@
 
 
         </section>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-info">
-                    <div class="info-bloco">
-                        <h4>Onde Estamos</h4>
-                        <p>Rua dos Cafezais, 123 - Centro<br>Belo Horizonte - MG</p>
-                    </div>
-                    <div class="info-bloco">
-                        <h4>Horário de Funcionamento</h4>
-                        <p>Segunda a Sexta: 07h às 19h<br>Sábados e Feriados: 08h às 16h</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include ('includes/footer.php') ?>
 
     </div>
 </body>

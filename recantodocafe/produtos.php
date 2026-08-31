@@ -24,7 +24,7 @@ try {
     $inicio = ($pagina_atual - 1) * $itens_por_pagina;
 
     // 4. CONSULTA COM LIMIT E OFFSET
-    $stmt = $connect->prepare("SELECT id_produtos, nome, preco, categoria, descricao FROM produtos WHERE ativo = 1 LIMIT ? OFFSET ?");
+    $stmt = $connect->prepare("SELECT id_produtos, nome, preco, categoria, imagem, descricao FROM produtos WHERE ativo = 1 LIMIT ? OFFSET ?");
     $stmt->bind_param("ii", $itens_por_pagina, $inicio);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -119,7 +119,7 @@ try {
 
     /* Botão de Compra */
     .btn-comprar {
-        background-color: #3498db;
+        background-color: #573315;
         color: white;
         border: none;
         padding: 10px;
@@ -195,7 +195,7 @@ try {
         <?php if (!empty($produtos)): ?>
             <?php foreach ($produtos as $item): ?>
                 <div class="produto-card">
-                    <img src="https://placeholder.com" alt="<?= htmlspecialchars($item['nome']) ?>" class="produto-imagem">
+                    <img src="<?= htmlspecialchars($item['imagem']);?>" alt="<?= htmlspecialchars($item['nome']) ?>" class="produto-imagem">
                     <div class="produto-info">
                         <span class="produto-categoria"><?= htmlspecialchars($item['categoria']) ?></span>
                         <h3 class="produto-nome"><?= htmlspecialchars($item['nome']) ?></h3>

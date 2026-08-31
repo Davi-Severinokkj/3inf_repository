@@ -29,7 +29,7 @@ include("includes/head.php");
         <ul>
 
             <li>
-                <a href="suporte.html">
+                <a href="suporte.php">
                     Suporte
                 </a>
             </li>

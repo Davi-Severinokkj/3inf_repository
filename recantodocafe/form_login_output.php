@@ -53,7 +53,7 @@ include("includes/head.php");
 
     <nav>
         <ul>
-            <li><a href="suporte.html">Suporte</a></li>
+            <li><a href="suporte.php">Suporte</a></li>
             <li><a href="servicos.html">Serviços</a></li>
             <li><a href="sobre.html">Sobre nós</a></li>
             <li><a href="clientes.html">Clientes</a></li>
