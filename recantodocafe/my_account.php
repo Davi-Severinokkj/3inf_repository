@@ -421,6 +421,7 @@ include("includes/head.php");
 
 </main>
 
+<?php  include ("includes/footer.php"); ?>
 
 </body>
 </html>

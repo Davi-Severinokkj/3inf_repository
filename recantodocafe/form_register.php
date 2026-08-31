@@ -1,65 +1,17 @@
 <?php
-
 session_start();
 
-$nome = $senha = $email = $telefone = "";
-$nome_err = $senha_err = $email_err = $telefone_err = "";
+$nome = "";
+$senha = "";
+$email = "";
+$telefone = "";
 
+$nome_err = "";
+$senha_err = "";
+$email_err = "";
+$telefone_err = "";
 
 include("includes/head.php");
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    if (empty($_POST["nome"])) {
-        $nome_err = "Por favor, insira o seu nome!";
-    } else {
-        $nome = verificar_entrada($_POST["nome"]);
-        // CORREÇÃO: Adicionado espaço no regex /^[a-zA-Z ]*$/
-        if (!preg_match("/^[a-zA-ZÀ-ÿ\s]+$/", $nome)) {
-            $nome_err = "Permitido a entrada apenas de letras e espaços em brancos. <span style='color: red;'>Utilize Nome Sobrenome da Silva</span>";
-        }
-    }
-
-    if (empty($_POST["password"])) {
-        $senha_err = "Por favor, insira a senha!";
-    } else {
-        // CORREÇÃO: Primeiro pegamos o valor do $_POST para depois testar no preg_match
-        $senha = verificar_entrada($_POST["password"]);
-        if(!preg_match("/^[a-zA-Z0-9_@!#$%¨&()]*$/",$senha)){
-            $senha_err = "Padrão de senha incorreto. <span style='color: red;'>Utilize Senha12345 (Apenas letras e números)</span>";
-        }
-    }
-
-    // CORREÇÃO: Mudado de $POST para $_POST
-    if (empty($_POST['email'])) {
-        $email_err = "Por favor, insira o email!";
-    } else {
-        $email = verificar_entrada($_POST["email"]);
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            $email_err = "Padrão de E-mail incorreto. <span style='color: red;'>Utilize exemplo@exemplo.com</span>";
-        }
-    }
-
-    // CORREÇÃO: Mudado de $POST para $_POST
-    if (empty($_POST['telefone'])) {
-        $telefone_err = "Por favor, insira o telefone!";
-    } else {
-        $telefone = verificar_entrada($_POST["telefone"]);
-        if(!filter_var($telefone, FILTER_VALIDATE_INT)){
-            $telefone_err = "Digite seu telefone corretamente. <span style='color: red;'>Utilize 00999999999</span>";
-        }
-    }
-}
-
-function verificar_entrada($entrada)
-{
-    $entrada = trim($entrada);
-    $entrada = stripslashes($entrada);
-    $entrada = htmlspecialchars($entrada);
-    // Dica: Se quiser que a senha aceite letras maiúsculas, remova a linha abaixo
-    return $entrada;
-}
-
 ?>
 
 </head>
@@ -95,8 +47,7 @@ function verificar_entrada($entrada)
 
     <div class="form_content">
 
-        <!-- CORREÇÃO: Adicionado o "echo" antes do htmlspecialchars -->
-        <form action="form_register_output.php" method="post">
+        <form action="form_register_output.php " method="post">
 
             Nome completo:<br>
             <input type="text" name="nome" value="<?= htmlspecialchars($nome) ?>">
@@ -127,9 +78,7 @@ function verificar_entrada($entrada)
 </main>
 
 <?php
-
 include("includes/footer.php");
-
 ?>
 
 </body>
