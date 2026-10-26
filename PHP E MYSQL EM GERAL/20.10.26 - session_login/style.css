@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #101827, #172b46);
+    color: #f1f5f9;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.formulario h1 {
+    text-align: center;
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+.formulario p {
+    text-align: center;
+    color: #cbd5e1;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.formulario label {
+    display: block;
+    margin: 16px 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formulario input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 7px;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.formulario input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
+
+.formulario button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 24px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.formulario button:hover {
+    background: #1d4ed8;
+}
+
+.formulario a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+
+    border-radius: 10px;
+    background-color: #2274df;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.formulario .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.formulario .actions a:hover {
+    background-color: #2274dfa4;
+    transform: translateY(-1px);
+    color: rgb(186, 183, 183);
+    transition: 0.3s;
+    box-shadow: 3px 1px 15px #082d5c;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.links a {
+    color: #93c5fd;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.recover_password_container h1{
+    text-align: center;
+}
+
+.recover_password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.recover_password input[type="password"] {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 1px 10px #2564b6;
+
+
+}
+
+.recover_password input[type="password"]:focus {
+    border: 1px solid #2563eb;
+    box-shadow: none;
+}
+
+.recover_password button {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 1px 10px #2564b6;
+
+
+}
+
+
+
+
+@media (max-width: 400px) {
+    .formulario {
+        padding: 24px 18px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
